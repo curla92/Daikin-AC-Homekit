@@ -10,26 +10,8 @@ You can set heat and cool temp in homekit, control fan speed and swing in EVE ap
 - *Daikin ARC433B69 remote;*
 - *Daikin ARC423A5 remote;*
 
-**Features:**
-
-- Temp Range Heat/Cool: *18-30c°*;
-
-- Offset: *Temp and Hum*;
-
-- Fan Speed Range: *0/Auto, 1/Fan1, 2/Fan2, 3/Fan3, 4/Fan4, 5/Fan5;*
-
-- Swing: *ON/OFF*; **(NOT AVAILABLE YET)**
-
-**Setup Config:**
-
-Device Type Model
-- *0/D216(ARC433B69);*
-- *1/D160(ARC423A5);*
-
-*Wifi Reset, Reboot and Ota Update;*
-
-- Reset Mode:
-*First minute from reebot, switch on/off 10 times Show Setup toggle;*
+**WiKi**
+[Go to the Wiki to config.](https://github.com/curla92/Daikin-AC-Homekit/wiki/EVE-CONFIG).
 
 **Homekit Setup Code is :**
 ```
