@@ -11,6 +11,7 @@ You can set heat and cool temp in homekit, control fan speed and swing in EVE ap
 
 
 **Daikin AC Supported**
+- *Daikin ARC433** remote;*
 - *Daikin ARC433B69 remote;*
 - *Daikin ARC423A5 remote;*
 
