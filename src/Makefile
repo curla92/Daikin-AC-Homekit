@@ -7,7 +7,7 @@ EXTRA_COMPONENTS = \
 	extras/dhcpserver \
 	extras/rboot-ota \
 	$(abspath ../lib/esp-adv-button) \
-    $(abspath ../lib/esp-led-codes)\
+        $(abspath ../lib/esp-led-codes)\
 	$(abspath ../components/esp-8266/irremote) \
 	$(abspath ../components/esp-8266/esp-wifi-config) \
 	$(abspath ../components/esp-8266/esp-cjson) \
