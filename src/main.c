@@ -160,239 +160,17 @@ void update_temp() {
     target_temp = (int)target_temp;
     pass_temp_mode_values(target_temp, target_state, target_fan, target_swing, device_type_static);
     
-    // HEAT TARGET STATE 1
-    if (target_state == 1) {
-        switch ((int) target_temp) {
-                
-            case 18:
-                
-                // printf("New Heating Temp: %d\n", 18 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 19:
-                
-                // printf("New Heating Temp: %d\n", 19 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 20:
-                
-                // printf("New Heating Temp: %d\n", 20 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 21:
-                
-                // printf("New Heating Temp: %d\n", 21 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                
-                break;
-                
-            case 22:
-                
-                // printf("New Heating Temp: %d\n", 22 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 23:
-                
-                // printf("New Heating Temp: %d\n", 23 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 24:
-                
-                // printf("New Heating Temp: %d\n", 24 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 25:
-                
-                // printf("New Heating Temp: %d\n", 25 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 26:
-                
-                // printf("New Heating Temp: %d\n", 26 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 27:
-                
-                // printf("New Heating Temp: %d\n", 27 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 28:
-                
-                // printf("New Heating Temp: %d\n", 28 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 29:
-                
-                // printf("New Heating Temp: %d\n", 29 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 30:
-                
-                // printf("New Heating Temp: %d\n", 30 );
-                ac_button_temp();
-                led_code(led_gpio, FUNCTION_B);
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            default:
-                
-                printf("No action \n");
-                
-        }
+    ac_button_temp();
+    
+    if (target_state == 1 && target_temp == 30) {
+        led_code(led_gpio, FUNCTION_B);
+    }else if (target_state == 2 && target_temp == 18) {
+        led_code(led_gpio, FUNCTION_B);
     }
     
-    // COOL TARGET STATE 2
-    if (target_state == 2) {
-        
-        switch ((int) target_temp) {
-                
-            case 18:
-                
-                // printf("New Cooling Temp: %d\n", 18 );
-                ac_button_temp();
-                led_code(led_gpio, FUNCTION_B);
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 19:
-                
-                // printf("New Cooling Temp: %d\n", 19 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 20:
-                
-                // printf("New Cooling Temp: %d\n", 20 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 21:
-                
-                // printf("New Cooling Temp: %d\n", 21 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 22:
-                
-                // printf("New Cooling Temp: %d\n", 22 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 23:
-                
-                // printf("New Cooling Temp: %d\n", 23 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 24:
-                
-                // printf("New Cooling Temp: %d\n", 24 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 25:
-                
-                // printf("New Cooling Temp: %d\n", 25 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 26:
-                
-                // printf("New Cooling Temp: %d\n", 26 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 27:
-                
-                // printf("New Cooling Temp: %d\n", 27 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 28:
-                
-                // printf("New Cooling Temp: %d\n", 28 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 29:
-                
-                // printf("New Cooling Temp: %d\n", 29 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            case 30:
-                
-                // printf("New Cooling Temp: %d\n", 30 );
-                ac_button_temp();
-                switch_temp_update = 1;
-                update_state();
-                break;
-                
-            default:
-                
-                printf("No action \n");
-                
-        }
-    }
+    switch_temp_update = 1;
+    update_state();
+    
 }
 
 // FAN GET VALUE
@@ -737,7 +515,7 @@ void temperature_sensor() {
 
 // HOMEKIT
 void on_event(homekit_event_t event) {
-
+    
     switch (event) {
         case HOMEKIT_EVENT_SERVER_INITIALIZED:
             printf("on_homekit_event: Server initialised\n");
@@ -760,14 +538,14 @@ void on_event(homekit_event_t event) {
         case HOMEKIT_EVENT_PAIRING_REMOVED:
             printf("on_homekit_event: Pairing removed\n");
             if (!homekit_is_paired())
-                /* if we have no more pairtings then restart */
+            /* if we have no more pairtings then restart */
                 printf("on_homekit_event: no more pairings so restart\n");
-                sdk_system_restart();
+            sdk_system_restart();
             break;
         default:
             printf("on_homekit_event: Default event %d ", event);
     }
-
+    
 }
 
 // GLOBAL CHARACTERISTICS
@@ -775,7 +553,7 @@ homekit_characteristic_t manufacturer = HOMEKIT_CHARACTERISTIC_(MANUFACTURER, "C
 homekit_characteristic_t name = HOMEKIT_CHARACTERISTIC_(NAME, "Air Conditioner");
 homekit_characteristic_t serial = HOMEKIT_CHARACTERISTIC_(SERIAL_NUMBER, NULL);
 homekit_characteristic_t model = HOMEKIT_CHARACTERISTIC_(MODEL, "Daikin AC");
-homekit_characteristic_t revision = HOMEKIT_CHARACTERISTIC_(FIRMWARE_REVISION, "1.1.2");
+homekit_characteristic_t revision = HOMEKIT_CHARACTERISTIC_(FIRMWARE_REVISION, "1.2.1");
 homekit_characteristic_t identify_function = HOMEKIT_CHARACTERISTIC_(IDENTIFY, identify);
 homekit_characteristic_t service_name = HOMEKIT_CHARACTERISTIC_(NAME, "Daikin AC");
 homekit_characteristic_t setup_name = HOMEKIT_CHARACTERISTIC_(NAME, "Setup");
